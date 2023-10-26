@@ -67,11 +67,7 @@ Clone this repository to your desired folder:
 ```sh
   mkdir vet-clinic
   cd vet-clinic
-<<<<<<< HEAD
   git clone git@github.com:Ademola-coding/vet_clinic.git
-=======
-  git clone git@github.com:demesameneshoa/vet_clinic.git
->>>>>>> c66a93b36b652f662da3cbe0d3f29b28f50cf366
 ```
 
 ### Install
@@ -92,19 +88,11 @@ No tests here
 
 ## 👥 Authors <a name="authors"></a>
 
-<<<<<<< HEAD
 👤 **Author**
 
 - GitHub: [@Ademola-coding](https://github.com/Ademola-coding)
 - Twitter: [@devAdemolaOfNig](https://twitter.com/Ademola-coding)
 - LinkedIn: [Ademola Owoeye](https://linkedin.com/in/ademola-coding)
-=======
-👤 **Author1**
-
-- GitHub: [@demesameneshoa](https://github.com/Ademola-coding)
-- Twitter: [@demesabera](https://twitter.com/Ademola-coding)
-- LinkedIn: [Demes Ameneshoa](https://linkedin.com/in/ademola-coding)
->>>>>>> c66a93b36b652f662da3cbe0d3f29b28f50cf366
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
