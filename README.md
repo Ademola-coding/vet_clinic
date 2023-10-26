@@ -1,2 +1,2 @@
 # vet_clinic
-Nan
+Na
