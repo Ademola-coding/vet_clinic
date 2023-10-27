@@ -73,16 +73,25 @@ GROUP BY species;
 
 -- Project 3
 --Join Query by owner name
-select * from animals JOIN owners on animals.owner_id=owners.id where owners.full_name='Melody Pond';
+SELECT
+    animals.name AS animals_owned_by_melody_pond
+FROM
+    animals
+    JOIN owners ON owners.id = animals.owner_id
+WHERE
+    owners.full_name = 'Melody Pond';
 
---Join Query by species name
-select * from animals JOIN species on animals.species_id=species.id where species.name='Pokemon';
+-- **** List of all animals that are pokemon (their type is Pokemon).
+SELECT
+    animals.name AS pokemons
+FROM
+    animals
+    JOIN species ON species.id = animals.species_id
+WHERE
+    species.name = 'Pokemon';
 
 --Full Join Query by owner
 select * from animals Full JOIN owners on animals.owner_id = owners.id;
-
---Join Count group by species
-select species.name as animals_species,count(species.name) as species_count from species JOIN animals on animals.species_id=species.id GROUP BY species.name;
 
 --Join three tables and filter by owner and species
 select * from animals JOIN owners on animals.owner_id=owners.id JOIN species on animals.species_id=species.id where species.name='Digimon' and owners.full_name='Jennifer Orwell';
