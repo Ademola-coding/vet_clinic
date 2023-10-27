@@ -90,8 +90,8 @@ No tests here
 
 👤 **Author**
 
-- GitHub: [@Ademola-coding](https://github.com/Ademola-coding)
-- Twitter: [https://twitter.com/devAdemolaOfNig](https://twitter.com/devAdemolaOfNig)
+- GitHub: [Ademola-coding](https://github.com/Ademola-coding)
+- Twitter: [@devAdemolaOfNig](https://twitter.com/devAdemolaOfNig)
 - LinkedIn: [Ademola Owoeye](www.linkedin.com/in/ademola-owoeye)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
