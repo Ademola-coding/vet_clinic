@@ -1,3 +1,4 @@
+-- Project 1
 /*Queries that provide answers to the questions from all projects.*/
 SELECT * FROM animals WHERE name LIKE '%mon';
 SELECT name FROM animals WHERE date_of_birth BETWEEN '2016-01-01' AND '2019-12-31';
@@ -7,6 +8,7 @@ SELECT name, escape_attempts FROM animals WHERE weight_kg > 10.5;
 SELECT * FROM animals WHERE neutered = true;
 SELECT * FROM animals WHERE name <> 'Gabumon';
 SELECT * FROM animals WHERE weight_kg BETWEEN 10.4 AND 17.3;
+
 
 -- project 2
 --Update species column with RollBack
@@ -68,3 +70,34 @@ WHERE date_of_birth
 BETWEEN '1990-01-01' 
 AND '2000-12-31' 
 GROUP BY species;
+
+-- Project 3
+--Join Query by owner name
+SELECT
+    animals.name AS animals_owned_by_melody_pond
+FROM
+    animals
+    JOIN owners ON owners.id = animals.owner_id
+WHERE
+    owners.full_name = 'Melody Pond';
+
+-- **** List of all animals that are pokemon (their type is Pokemon).
+SELECT
+    animals.name AS pokemons
+FROM
+    animals
+    JOIN species ON species.id = animals.species_id
+WHERE
+    species.name = 'Pokemon';
+
+--Full Join Query by owner
+select * from animals Full JOIN owners on animals.owner_id = owners.id;
+
+--Join three tables and filter by owner and species
+select * from animals JOIN owners on animals.owner_id=owners.id JOIN species on animals.species_id=species.id where species.name='Digimon' and owners.full_name='Jennifer Orwell';
+
+--Join animal and owner table and filter by owner name and zero escape attempt
+select * from animals JOIN owners on animals.owner_id=owners.id WHERE owners.full_name='Dean Winchester' AND escape_attempts=0;
+
+-- Who owns the most animals;
+select full_name as owner_name, count(full_name)no_of_animals from owners JOIN animals on animals.owner_id=owners.id GROUP BY owners.full_name;
